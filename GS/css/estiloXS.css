@@ -1,0 +1,50 @@
+/* eXtra Small devices (phones, 600px and down) */
+
+@media  (max-width: 600px) {
+      .linksCabecalho{
+        display: none;
+    }
+
+    .hamburguer {
+        left: 25px; /* Posiciona o ícone hambúrguer à esquerda */
+    }
+
+    .lupa {
+        margin-left: 98px;
+    }
+    
+    #navRodape {
+        width: 80%;  
+    }
+
+    .conteudoRodape {
+        height: 60px;
+    }
+
+    #rodape {
+        margin-top: 0px;
+    }
+
+    #rodape a {
+        font-size: 10px;
+    }
+    
+    #logoRodape img{
+        height: 25px;
+        margin-left: 370px;
+    }
+
+    #pt1 {
+        position: absolute;
+    }
+
+    #pt2 {
+        position: absolute;
+        margin-left: 150px;
+    }
+    
+    #copy{
+        font-size: 9px;
+        margin-left: 393px;
+    }
+}
