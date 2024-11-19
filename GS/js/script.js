@@ -83,4 +83,39 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    const slides = document.querySelector('.slides');
+    const totalSlides = slides.children.length;
+    let currentIndex = 0;
+
+    function updateSlidePosition() {
+        const offset = -currentIndex * 100; // Move 100% da largura para cada slide
+        slides.style.transform = `translateX(${offset}%)`;
+    }
+
+    function autoSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides; // Avança o índice e reinicia se for o último
+        updateSlidePosition();
+    }
+
+    // Troca de slide a cada 5 segundos
+    setInterval(autoSlide, 5000);
 });
+
+// Seleciona todos os botões de pergunta
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+// Adiciona um evento de clique para cada pergunta
+faqQuestions.forEach((question) => {
+  question.addEventListener('click', () => {
+    const answer = question.nextElementSibling; // Seleciona a resposta associada à pergunta
+
+    // Alterna entre mostrar ou esconder a resposta
+    if (answer.style.display === 'block') {
+      answer.style.display = 'none';
+    } else {
+      answer.style.display = 'block';
+    }
+  });
+});
+

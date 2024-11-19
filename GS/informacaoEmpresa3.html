@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estiloMD.css">
+    <link rel="stylesheet" href="css/estiloXL.css">
+    <link rel="stylesheet" href="css/estiloXS.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <title>Ultragaz</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="wrapper">
+            <div class="hamb">
+                <nav>
+                    <div class="hamburguer" id="hamburguer-icon">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div id="menu" class="menu">
+                        <ul>
+                            <li>
+                                <a href="login.html">
+                                    <img src="images/usuario.png" alt="Ícone para acessar conta" class="icon">Acesse sua
+                                    conta
+                                </a>
+                                <div>
+                                    <a href="cadastrarDoador.html" class="cadastre-se">ou cadastre-se grátis</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="painelDeCampanhas.html">
+                                    <img src="images/home.png" alt="Ícone para o Painel de Campanhas" class="icon">Painel de Campanhas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cadastrarCampanhas.html">
+                                    <img src="images/folhinha.png" alt="Ícone de folhinha" class="icon">Cadastrar Campanha
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sobreEmpresas.html">
+                                    <img src="images/parceria.png" alt="Ícone de mão dadas para informações de Empresas Parceiras"
+                                        class="icon">Empresas Parceiras
+                                </a>
+                            </li>
+                            <li>
+                                <a href="integrantes.html">
+                                    <img src="images/usuario.png" alt="Ícone de integrantes da equipe"
+                                        class="icon">Integrantes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="faq.html">
+                                    <img src="images/faq.png" alt="Ícone para FAQ" class="icon">FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="desconectar">
+                                    <img src="images/deslogar.png" alt="Ícone para desconectar" class="icon">Desconectar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/logo_verde.png" alt="logo">
+                </a>
+            </div>
+            <div class="linkHeader">
+                <div class="cabecalho">
+                    <section class="linksCabecalho">
+                        <a href="login.html">LOGIN</a> |
+                        <a href="#" id="busca">BUSCA</a>
+                    </section>
+                    <div class="linksCabecalhoIcones">
+                        <a href="#"><img src="images/lupa.png" alt="lupa" class="lupa" id="search-icon"></a>
+                        <a href="verPerfil.html"><img src="images/usuario_branco.png" alt="perfil"
+                                class="perfil"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+        <main>
+            <div class="botoesMenuHome">
+                <a href="home.html" class="botaoM">HOME</a>
+                <a href="painelDeCampanhas.html" class="botaoM botaoApoiar">APOIAR</a>
+                <a href="sobreEmpresas.html" class="botaoM">EMPRESAS PARCEIRAS</a>
+                <a href="integrantes.html" class="botaoM">INTEGRANTES</a>
+                <a href="faq.html" class="botaoM">FAQ</a>
+                <a href="login.html" class="botaoM_Acesse">
+                    <span id="linha1"><b>ACESSE SUA CONTA</b></span>
+                    <span id="linha2">OU CADASTRE-SE GRÁTIS</span>
+                </a>
+            </div>
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Digite sua busca..." />
+                <button id="search-button">Pesquisar</button>
+            </div>    
+
+        </main>
+        <footer id="rodape">
+            <div class="conteudoRodape">
+                <nav id="navRodape">
+                    <div id="pt1">
+                        <a href="home.html">HOME</a>
+                        <br>
+                        <a href="login.html">ACESSE A SUA CONTA</a>
+                        <br>
+                        <a href="painelDeCampanhas.html">PAINEL DE CAMPANHAS</a>
+                    </div>
+                    <div id ="pt2">
+                        <a href="sobreEmpresas.html">EMPRESAS PARCEIRAS</a>
+                        <br>
+                        <a href="integrantes.html">INTEGRANTES</a>
+                        <br>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                    <div id="logoRodape">
+                        <img src ="images/logo_cinza.png" alt="logo"></a>
+                        <p id="copy">© Copyright 2024</p>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+    </body>
+        <script src="js/script.js"></script>
+    </html>
