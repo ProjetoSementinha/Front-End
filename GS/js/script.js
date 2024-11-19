@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (menu.classList.contains('show')) {
             menu.classList.remove('show');
             menu.classList.add('hide');
-         // Abre o menu
+            // Abre o menu
         } else {
             menu.style.display = 'block';
             menu.classList.remove('hide');
@@ -24,14 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
     searchIcon.addEventListener('click', (event) => {
         event.stopPropagation(); // Evita que o evento se propague e acione o evento de clique fora do menu
         // Abre ou fecha o campo de pesquisa
-        searchContainer.style.display = 
+        searchContainer.style.display =
             searchContainer.style.display === 'block' ? 'none' : 'block';
     });
 
     busca.addEventListener('click', (event) => {
         event.stopPropagation(); // Evita que o evento se propague e acione o evento de clique fora do menu
         // Abre ou fecha o campo de pesquisa
-        searchContainer.style.display = 
+        searchContainer.style.display =
             searchContainer.style.display === 'block' ? 'none' : 'block';
     });
 
@@ -65,13 +65,13 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const inputImagem = document.getElementById('carregarImagem');
     if (inputImagem) {
-        inputImagem.addEventListener('change', function(event) {
+        inputImagem.addEventListener('change', function (event) {
             const visualizacaoImagem = document.getElementById('imagemUsuario');
             const arquivo = event.target.files[0];
 
             if (arquivo) {
                 const leitor = new FileReader();
-                leitor.onload = function(e) {
+                leitor.onload = function (e) {
                     // Mostra a imagem carregada
                     visualizacaoImagem.src = e.target.result;
                     visualizacaoImagem.style.width = "150px";
@@ -107,15 +107,15 @@ const faqQuestions = document.querySelectorAll('.faq-question');
 
 // Adiciona um evento de clique para cada pergunta
 faqQuestions.forEach((question) => {
-  question.addEventListener('click', () => {
-    const answer = question.nextElementSibling; // Seleciona a resposta associada à pergunta
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling; // Seleciona a resposta associada à pergunta
 
-    // Alterna entre mostrar ou esconder a resposta
-    if (answer.style.display === 'block') {
-      answer.style.display = 'none';
-    } else {
-      answer.style.display = 'block';
-    }
-  });
+        // Alterna entre mostrar ou esconder a resposta
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
+        }
+    });
 });
 

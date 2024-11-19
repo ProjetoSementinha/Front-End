@@ -964,3 +964,46 @@ h4 {
     cursor: pointer; /* Muda o cursor ao passar por cima */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#apoiando {
+    margin-top: 35px;
+}
+
+#textoPagamento {
+    margin-bottom: 25px;
+}
+
+.formaPagamento {
+    background-color: #e0e0e0;
+    margin-top: 30px;
+}
+
+#pag {
+    text-decoration: none;
+    text-align: center;
+}
+
+.formaPagamento img {
+    width: 50px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.tipoPagamento {
+    text-align: center;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px 
+}
+
+.empresas {
+    display: flex;
+    justify-content: space-between; /* Opcional: distribui o espaço entre as empresas */
+    align-items: center; /* Opcional: alinha as imagens verticalmente ao centro */
+}
+
+#infoEmpresaSap {
+    width: 900px;
+    margin-top: 20px;
+}

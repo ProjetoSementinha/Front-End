@@ -378,4 +378,36 @@
         font-size: 16px; /* Tamanho da fonte */
         margin-left: 0px;
     }
+    
+    .formaPagamento {
+        width: 350px;
+        height: 100px;
+        background-color: #e0e0e0;
+        margin: 10px;
+        border-radius: 20px;
+        margin-top: 10px;
+        line-height: 100px;
+    }
+    
+    .tipoPagamento {
+        font-size: 16px;
+    }
+
+    .empresas {
+        margin-top: 20px;
+        width: 600px;
+    }
+    
+    .empresa1, .empresa2, .empresa3 {
+        margin: 0 5px; /* Adiciona um pequeno espaço entre as empresas */
+    }
+    
+    .empresas img {
+        width: 160px;
+        margin-top: 25px;
+    }
+    
+    #tituloEmpresasParceiras{
+        margin-top: 30px;
+    }
 }
