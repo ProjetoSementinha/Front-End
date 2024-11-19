@@ -1,0 +1,360 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #header{
+        width: 100%;
+        height: 75px;
+        background-color: #307834;
+    }
+    
+    .logo img{
+        width: 170px;
+    }
+
+    .conteudoRodape {
+        max-width: 1000px; /* Largura máxima do conteúdo */
+    }
+    
+    .hamburguer {
+        margin-left: -30px;
+    }
+
+    .linksCabecalho {
+        margin-left: 64px;
+    }
+
+    /* Estilizando os campos de entrada */
+    #frmCadastro input[type="text"],
+    #frmCadastro input[type="password"] {
+        width:845px;
+    }
+
+    #frmCadastro {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 870px; /* Largura do formulário */
+    }
+
+    #txtDescricao {
+        width: 845px;
+    }
+
+    .slider {
+        width: 1200px;
+        height: 30%;
+    }
+    
+    /* Imagens do slide */
+    .slides {
+        height: 100%px;
+        width: 1200px;
+    }
+    
+    .slides img {
+        width: 1200px;
+        height: 30%;
+    }
+
+    .conteudo {
+        margin-top: 10px;
+        width: 930px;
+        margin-left: 10px;
+    }
+    
+    #imgSemeando{
+        width: 176px;
+        margin-top: -180px;
+        margin-left: 250px;
+    }
+
+    .titulo{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        color: white;
+        border-radius: 50px;
+        width: 250px;
+        background-color: #307834;
+        padding: 8px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .conteudo {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        border-radius: 20px;
+        background-color: #ECECEC;
+        padding: 15px;
+    }
+    
+    p {
+        text-indent: 30px; /* Define o espaço na primeira linha do parágrafo */
+    }
+    
+    #imgSemeando{
+        float: right;
+    }
+    
+    .chamada{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        border-radius: 50px;
+        width: 650px;
+        color: white;
+        background-color: #307834;
+        padding: 8px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .campanhaHome {
+        float: left;
+        margin: 23px;
+        margin-top: 20px;
+        width: 340px;
+        height: 485px;
+        border: 2px;
+        background-color: #ECECEC;
+        border-radius: 20px;
+        text-align: center;
+    }
+    
+    #campanhaHome1, #campanhaHome2, #campanhaHome3{
+        width: 200px;
+        margin: 10px;
+    }
+    
+    #campanhaHome3 {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    
+    .tipoEnergia, .nomeOrganizacao {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        
+    }
+    
+    .descricaoCampanhaHome {
+        margin: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+    }
+    
+    .metaHome1 {
+        font-size: 15px;
+    }
+    
+    .metaHome2 {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    
+    .metaHome3 {
+        margin-top: 45px;
+        font-size: 15px;
+    }
+    
+    progress {
+        width: 90%; /* Largura da barra */
+        height: 30px; /* Altura da barra */
+        appearance: none; /* Remover estilos padrões do navegador */
+        margin-top: 10px;
+    }
+    
+    progress::-webkit-progress-bar {
+        background-color: white; /* Cor de fundo da barra */
+        border-radius: 10px;
+    }
+    
+    progress::-webkit-progress-value {
+        background-color: #4caf50; /* Cor da parte preenchida da barra */
+        border-radius: 10px;
+    }
+    
+    progress::-moz-progress-bar {
+        background-color: #4caf50; /* Cor para Firefox */
+        border-radius: 10px;
+    }
+    
+    .numero-progresso1 {
+        margin-top: -25px;
+        left: 60%;
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .numero-progresso2 {
+        margin-top: -25px;
+        margin-left: -180px;
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .numero-progresso3 {
+        margin-top: -25px;
+        margin-left: 60px;
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .faq-container {
+        width: 850px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+      
+    .faq-question {
+        width: 850px;
+        padding: 15px;
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        text-align: left;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        transition: background-color 0.3s;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+      
+      .faq-question:hover {
+        background-color: #e0e0e0;
+    }
+      
+    .faq-answer {
+        padding: 10px;
+        background-color: #fafafa;
+        display: none; /* Inicialmente escondido */
+        border: 1px solid #ddd;
+        border-top: none;
+        text-indent: 0px;
+    }
+    
+    .respostaFAQ {
+        margin-top: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #tituloFormulario{
+        font-size: 18px; /* Tamanho da fonte */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black; /* Cor do texto */
+        margin-left: -25px;
+        margin-bottom: 12px;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+
+    .filtroCampanha{
+        font-size: 14px; /* Tamanho da fonte */
+        margin-left: 5px;
+    }
+    
+    .filtroCampanha option {
+        font-size: 12px; /* Tamanho da fonte */
+    }
+    
+    .campanha {
+        width: 900px;
+        height: 253px;
+        margin-bottom: 10px;
+    }
+    
+    .campanhaTexto {
+        margin-right: 12px;
+        margin-top: 6px;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+    
+    #progressoPainel::-webkit-progress-bar {
+        margin-left: 150px;
+        width: 90%;
+    }
+    
+    .numero-progresso1-painel {
+        font-size: 15px;
+        margin-top: -24px;
+        margin-left: 540px;
+    }
+    
+    .numero-progresso2-painel {
+        font-size: 15px;
+        margin-top: -24px;
+        margin-left: 322px;
+    }
+    
+    .numero-progresso3-painel {
+        font-size: 15px;
+        margin-top: -24px;
+        margin-left: 612px;
+    }
+    
+    .metaPainel1 {
+        font-size: 16px;
+    }
+    
+    .metaPainel2 {
+        font-size: 16px;
+        margin-left: 150px;
+    }
+
+    #grupoCampanhas {
+        margin-top: 50px;
+    }
+
+    #campanha1 {
+        margin-top: 12px;
+    }
+    
+    #campanha2, #campanha3 {
+        margin-top: 22px;
+    }
+    
+    #botaoEmpresa-Semear {
+        margin-top: 25px;
+    }
+    
+    .botaoEmpresa {
+        font-size: 16px; /* Tamanho da fonte */
+        margin-left: 623px;
+    }
+    
+    .botaoEmpresa2 {
+        font-size: 16px; /* Tamanho da fonte */
+        margin-left: 630px;
+    }
+    
+    .botaoEmpresa3 {
+        font-size: 16px; /* Tamanho da fonte */
+        margin-left: 590px;
+    }
+    
+    .botaoParaApoiar {
+        font-size: 16px; /* Tamanho da fonte */
+        margin-left: 0px;
+    }
+    
+    .formaPagamento {
+        width: 400px;
+        height: 100px;
+        background-color: #e0e0e0;
+        border-radius: 20px;
+        margin-top: 30px;
+        line-height: 100px;
+    }
+    
+    .tipoPagamento {
+        font-size: 18px 
+    }
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estiloMD.css">
+    <link rel="stylesheet" href="css/estiloXL.css">
+    <link rel="stylesheet" href="css/estiloXS.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <title>Painel de Campanha</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="wrapper">
+            <div class="hamb">
+                <nav>
+                    <div class="hamburguer" id="hamburguer-icon">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div id="menu" class="menu">
+                        <ul>
+                            <li>
+                                <a href="login.html">
+                                    <img src="images/usuario.png" alt="Ícone para acessar conta" class="icon">Acesse sua
+                                    conta
+                                </a>
+                                <div>
+                                    <a href="cadastrarDoador.html" class="cadastre-se">ou cadastre-se grátis</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="home.html">
+                                    <img src="images/home.png" alt="Ícone para o Home" class="icon">Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="painelDeCampanhas.html">
+                                    <img src="images/painel.png" alt="Ícone para o Painel de Campanhas" class="icon">Painel de Campanhas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cadastrarCampanhas.html">
+                                    <img src="images/folhinha.png" alt="Ícone de folhinha" class="icon">Cadastrar
+                                    Campanha
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sobreEmpresas.html">
+                                    <img src="images/parceria.png"
+                                        alt="Ícone de mão dadas para informações de Empresas Parceiras"
+                                        class="icon">Empresas Parceiras
+                                </a>
+                            </li>
+                            <li>
+                                <a href="integrantes.html">
+                                    <img src="images/usuario.png" alt="Ícone de integrantes da equipe"
+                                        class="icon">Integrantes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="faq.html">
+                                    <img src="images/faq.png" alt="Ícone para FAQ" class="icon">FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="desconectar">
+                                    <img src="images/deslogar.png" alt="Ícone para desconectar" class="icon">Desconectar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="images/logo_verde.png" alt="logo">
+                </a>
+            </div>
+            <div class="linkHeader">
+                <div class="cabecalho">
+                    <section class="linksCabecalho">
+                        <a href="login.html">LOGIN</a> |
+                        <a href="#" id="busca">BUSCA</a>
+                    </section>
+                    <div class="linksCabecalhoIcones">
+                        <a href="#"><img src="images/lupa.png" alt="lupa" class="lupa" id="search-icon"></a>
+                        <a href="verPerfil.html"><img src="images/usuario_branco.png" alt="perfil" class="perfil"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="botoesMenuHome">
+            <a href="home.html" class="botaoM">HOME</a>
+            <a href="painelDeCampanhas.html" class="botaoM botaoApoiarAtivo">APOIAR</a>
+            <a href="sobreEmpresas.html" class="botaoM">EMPRESAS PARCEIRAS</a>
+            <a href="integrantes.html" class="botaoM">INTEGRANTES</a>
+            <a href="faq.html" class="botaoM">FAQ</a>
+            <a href="login.html" class="botaoM_Acesse">
+                <span id="linha1"><b>ACESSE SUA CONTA</b></span>
+                <span id="linha2">OU CADASTRE-SE GRÁTIS</span>
+            </a>
+        </div>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Digite sua busca..." />
+            <button id="search-button">Pesquisar</button>
+        </div>
+        <h3>Painel de Campanhas</h3>
+        <select class="filtroCampanha" name="filtroCampanha" required>
+            <option value="" disabled selected>Tipo de Energia</option>
+            <option value="solar">Energia Solar</option>
+            <option value="eolica">Energia Eólica</option>
+            <option value="hidreletrica">Energia Hidrelétrica</option>
+            <option value="geotermica">Energia Geotérmica</option>
+            <option value="mares">Energia das Marés</option>
+            <option value="ondas">Energia das Ondas</option>
+            <option value="biomassa">Biomassa</option>
+            <option value="biogas">Biogás</option>
+            <option value="hidrogenio">Hidrogênio Verde</option>
+        </select>
+        <select class="filtroCampanha" name="filtroCampanha" required>
+            <option value="" disabled selected>Empresas</option>
+            <option value="SAP">SAP</option>
+            <option value="eolica">FIA</option>
+            <option value="hidreletrica">Ultragaz</option>
+        </select>
+        <div id="grupoCampanhas">
+            <div class="campanha" id="campanhaGeral1">
+                <img src="images/campanha1.png" id="logoC1">
+                <h4 id="campanha1">SolarTec Initiative</h4>
+                <div class="campanhaTexto"><b>Nome da Organização Responsável:</b> SAP | <b>Energia Solar</b> <br>
+                A SAP lança o projeto SolarTech Initiative, uma campanha dedicada a implementar sistemas de energia solar em pequenas
+                e médias empresas ao redor do mundo. Este projeto visa reduzir a pegada de carbono das empresas e promover a adoção
+                de práticas sustentáveis no setor corporativo.
+                </div>
+                <div class="metaPainel1"><b>Meta: R$350.000</b></div>
+                <progress value="60" max="100" id="progressoPainel"></progress>
+                <div class="numero-progresso1-painel"><b>60%</b></div>
+                <div id="botaoEmpresa-Semear">
+                    <a href="informacaoEmpresa1.html" class="botaoEmpresa">Saiba Mais | SAP</a>
+                    <a href="apoiar.html" class="botaoParaApoiar">Apoiar</a>
+                </div>
+            </div>
+            <div class="campanha" id="campanhaGeral2">
+                <img src="images/campanha2.png" id="logoC2">
+                <h4 id="campanha2">E-Racing Green Circuit</h4>
+                <div class="campanhaTexto"><b>Nome da Organização Responsável:</b> FIA | <b>Energia Eólica</b> <br>
+                A FIA apresenta a campanha E-Racing Green Circuit, um projeto inovador para criar pistas de corrida sustentáveis
+                alimentadas por energia eólica. O objetivo é reduzir as emissões de carbono dos eventos de corrida e promover a
+                energia limpa no esporte automobilístico.
+                </div>
+                <div class="metaPainel2"><b>Meta: R$300.000</b></div>
+                <progress value="30" max="100" id="progressoPainel"></progress>
+                <div class="numero-progresso2-painel"><b>30%</b></div>
+                <div id="botaoEmpresa-Semear">
+                    <a href="informacaoEmpresa2.html" class="botaoEmpresa2">Saiba Mais | FIA</a>
+                    <a href="apoiar.html" class="botaoParaApoiar">Apoiar</a>
+                </div> 
+            </div>
+            <div class="campanha" id="campanhaGeral3">
+                <img src="images/campanha3.png" id="logoC3">
+                <h4 id="campanha3">BioGas for All</h4>
+                <div class="campanhaTexto"><b>Nome da Organização Responsável:</b> Ultragas | <b>Biogás</b> <br>
+                A Ultragaz apresenta a campanha BioGas for All, um projeto que visa expandir o uso do biogás como fonte de energia
+                para residências e indústrias. Esta iniciativa busca aproveitar resíduos orgânicos para gerar energia limpa e
+                acessível.
+                </div>
+                <div class="metaPainel2"><b>Meta: R$200.000</b></div>
+                <progress value="70" max="100" id="progressoPainel"></progress>
+                <div class="numero-progresso3-painel"><b>70%</b></div>
+                <div id="botaoEmpresa-Semear">
+                    <a href="informacaoEmpresa3.html" class="botaoEmpresa3">Saiba Mais | Ultragas</a>
+                    <a href="apoiar.html" class="botaoParaApoiar">Apoiar</a>
+                </div> 
+            </div> 
+            </div>
+        </div>
+    </main>
+    <footer id="rodape">
+        <div class="conteudoRodape">
+            <nav id="navRodape">
+                <div id="pt1">
+                    <a href="home.html">HOME</a>
+                    <br>
+                    <a href="login.html">ACESSE A SUA CONTA</a>
+                    <br>
+                    <a href="painelDeCampanhas.html">PAINEL DE CAMPANHAS</a>
+                </div>
+                <div id="pt2">
+                    <a href="sobreEmpresas.html">EMPRESAS PARCEIRAS</a>
+                    <br>
+                    <a href="integrantes.html">INTEGRANTES</a>
+                    <br>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <div id="logoRodape">
+                    <img src="images/logo_cinza.png" alt="logo"></a>
+                    <p id="copy">© Copyright 2024</p>
+                </div>
+            </nav>
+        </div>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+
+</html>

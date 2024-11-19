@@ -1,0 +1,998 @@
+*{
+    margin: 0 auto;
+    padding: 0
+}
+
+#header{
+    width: 100%;
+    height: 75px;
+    background-color: #307834;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+}
+
+.wrapper{
+    width: 90%;
+    height: 60px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da tela */
+    display: flex;
+    flex-direction: column; /* Permite que o rodapé fique no final do conteúdo */
+}
+
+.hamb{
+    width: 33%;
+    height: 50px;
+    margin-top:10px;
+    float: left;
+}
+
+.linkHeader{
+    width: 33%;
+    height: 50px;
+    margin-top:10px;
+    float: left;
+}
+
+main {
+    flex: 1; /* Isso faz o conteúdo principal ocupar o espaço restante */
+    background-color: white; /* Cor de fundo do corpo */
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 33%;
+    margin-top: 20px;
+    float:left;
+}
+
+#search-container {
+    display: none;
+    margin: 20px 0; /* Espaçamento superior e inferior */
+    position: absolute; /* Torna o contêiner posicionado em relação ao seu elemento pai */
+    top: 60px; /* Distância do topo (ajuste conforme necessário) */
+    right: 50px; /* Centraliza horizontalmente */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    background-color: #f9f9f9; /* Cor de fundo (opcional) */
+    padding: 10px; /* Espaçamento interno (opcional) */
+    border-radius: 5px; /* Bordas arredondadas (opcional) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra (opcional) */
+}
+
+#search-input {
+    padding: 10px;
+    width: 300px; /* Largura do campo de pesquisa */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid #D9D9D9;
+    border-radius: 20px;
+}
+
+#search-button {
+    padding: 10px; /* Espaçamento interno do botão */
+    cursor: pointer; /* Muda o cursor ao passar por cima do botão */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: #16ad1b;
+}
+
+.hamburguer {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    left: 70px; /* Posiciona o ícone hambúrguer à esquerda */
+    top: 15px;  /* Ajusta a distância do topo */
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 2px 0;
+}
+
+.linksCabecalho a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Cor do texto */
+}
+
+.linksCabecalho {
+    float:left;
+    text-align: right;
+    color: white;
+    font-size: 13px;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo img{
+    width: 170px;
+}
+
+.lupa {
+    margin-top: 13px;
+    float: left;
+    width: 28px;
+    margin-left: 10px;
+}
+
+.perfil {
+    margin-top: 13px;
+    float: left;
+    width: 26px;
+    margin-left: 10px;  
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: rgba(204, 204, 190, 1);
+    width: 300px;
+    height: 70.4%;
+    padding: 20px;
+    display: none; /* Escondido inicialmente */
+    border: 2px solid #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: left 0.5s ease; /* Animação suave para a posição esquerda */
+    z-index: 999;
+}
+
+/* **Estilo de quando o menu estiver visível** */
+.menu.show {
+    display: block; /* Torna o menu visível */
+    left: 0; /* Move para dentro da tela */
+    animation: slideIn 0.5s forwards; /* Adiciona a animação de deslizar */
+}
+
+/* Estilo de quando o menu está ocultando */
+.menu.hide {
+    animation: slideOut 0.5s forwards; /* Animação de deslizar para fora */
+    display: block; /* Mantém visível durante a animação */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.menu ul li {
+    margin: 7px 0;
+    border-bottom: 1px solid black; /* Linha entre os itens */
+    padding-bottom: 5px; /* Espaçamento entre o texto e a linha */
+}
+
+.menu ul div {
+    margin-top: -10px;
+    margin-left: 150px;
+}
+
+.menu ul li div .cadastre-se {
+    font-size: 13px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #6C6C6C; /* Cor do texto */
+    margin-left: 10px;
+}
+
+/* Estilizar os ícones ao lado dos itens do menu */
+.menu ul li a {
+    display: flex; /* Alinha o ícone e o texto lado a lado */
+    align-items: center; /* Alinha verticalmente o ícone e o texto */
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+}
+
+.menu ul li a img.icon {
+    width: 30px; /* Tamanho do ícone */
+    height: 30px; /* Tamanho do ícone */
+    margin-left: 0px;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Para tornar o menu visível quando ativado */
+.menu.show {
+    display: block;
+}
+
+/* Adicione esta classe para a animação */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%); /* Inicia fora da tela à esquerda */
+    }
+    to {
+        transform: translateX(0); /* Move para a posição original */
+    }
+}
+
+/* Adicione esta classe para a animação de deslizar para fora */
+@keyframes slideOut {
+    from {
+        transform: translateX(0); /* Começa na posição original */
+    }
+    to {
+        transform: translateX(-100%); /* Move para fora da tela à esquerda */
+    }
+}
+
+.botoes {
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 40px; /* Espaçamento acima do contêiner (opcional) */
+    gap: 20px;
+}
+
+/* Estilizando o formulário */
+#frmLogin {
+    width: 350px; /* Largura do formulário */
+    margin: 35px auto; /* Centraliza o formulário na página */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo do formulário */
+    border: 1px solid #ccc; /* Borda do formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilizando os rótulos */
+#frmLogin label {
+    font-size: 14px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333; /* Cor do texto */
+    margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+    display: block; /* Faz o rótulo ocupar a linha inteira */
+}
+
+/* Estilizando os campos de entrada */
+#frmLogin input[type="text"],
+#frmLogin input[type="password"] {
+    width:325px; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: -10px; /* Espaçamento superior */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 14px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilizando o formulário */
+#frmCadastro {
+    margin: 0px;
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo do formulário */
+    border: 1px solid #ccc; /* Borda do formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilizando os rótulos */
+#frmCadastro label {
+    margin-top: 10px;
+    font-size: 14px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333; /* Cor do texto */
+    margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+    display: block; /* Faz o rótulo ocupar a linha inteira */
+}
+
+/* Estilizando os campos de entrada */
+#frmCadastro input[type="text"],
+#frmCadastro input[type="password"] {
+    padding: 10px; /* Espaçamento interno */
+    margin-top: -15px; /* Espaçamento superior */
+    margin-bottom: 5px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 14px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#tituloFormulario{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black; /* Cor do texto */
+}
+
+#green-energy {
+    font-size: 14px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 7px;
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+#green-energy option {
+    font-size: 14px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#txtDescricao {
+    font-size: 14px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 7px;
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.secao-upload {
+    text-align: center;
+}
+
+/* Estilizando os botões de login */
+.botoesLogin {
+    display: flex; /* Habilita flexbox */
+    justify-content: space-between; /* Espaça os botões uniformemente */
+    gap: 20px;
+    margin-top: -15px;
+}
+
+.botaoCadastrar {
+    padding: 10px 15px; /* Espaçamento interno */
+    color: #5a5a59; /* Cor do texto */
+    border: 2px solid #5a5a59; /* Sem borda */
+    border-radius: 20px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 0;
+}
+
+.botaoEntrar, .botaoCadastro {
+    padding: 10px 15px; /* Espaçamento interno */
+    background-color: #16ad1b; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 20px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 0;
+}
+
+#divBotaoCadastro {
+    margin-top: 20px;
+    margin-bottom: 11px;
+}
+
+#esqueciSenha {
+    display: flex;
+    align-items: center;
+    font-size: 14px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+}
+
+#esqueciSenha a {
+    color: #0000a5; /* Define a cor do texto */
+}
+
+#imagemUsuario {
+    width: 150px;
+}
+
+#rodape {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    background-color: #D9D9D9;
+    text-align: left;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+#navRodape{
+    position: static;
+    background-color: #D9D9D9;
+    display: flex; /* Define o contêiner como flexível */  
+}
+
+#rodape a {
+    color: #000000; /* Cor dos links */
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 5px; /* Espaçamento entre os links */
+}
+
+#pt1, #pt2 {
+    flex: 1; /* Faz com que ambas as divs ocupem o mesmo espaço */
+    margin: 0;
+}
+
+#logoRodape img{
+    height: 40px;
+    margin-left: 100px;
+    margin-top: -5px;
+}
+
+#copy{
+    font-size: 10px;
+    margin-top: 2px;
+    margin-left: 148px;
+}
+
+#esqueciSenhaTitulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 60px;
+}
+
+#esqueciSenhaTexto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 15px;
+    font-weight: normal;
+}
+
+#inputEmail {
+    text-align: center;
+}
+
+#inputEmail input[type="text"]{
+    width:285px; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaçamento superior */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 14px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#botaoES {
+    padding: 10px 15px; /* Espaçamento interno */
+    background-color: #16ad1b; /* Cor de fundo */
+    width: 70px;
+    border: none; /* Sem borda */
+    border-radius: 20px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#botaoES a {
+    text-decoration: none; /* Remove sublinhado */
+    color: white; /* Cor do texto */
+}
+
+.botoesMenu {
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 40px; /* Espaçamento acima do contêiner (opcional) */
+    gap: 5px;
+    margin: 40px;
+}
+
+div.botoesMenuHome{
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Espaçamento acima do contêiner (opcional) */
+    margin-bottom: 20px;
+    width: 850px;
+}
+
+.botaoM {
+    height: 20px;
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #ECECEC; /* Cor de fundo */
+    color: #342939; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-size: 15px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none; /* Remove sublinhado para o link */
+    display: flex; /* Permite que o link se comporte como um botão */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center; /* Centraliza o texto verticalmente */
+    text-align: center;
+    white-space: nowrap; /* Impede a quebra de linha do texto */
+}
+
+.botaoM_Acesse {
+    height: 16px;
+    padding: 12px 20px; /* Espaçamento interno */
+    background-color: #ECECEC; /* Cor de fundo */
+    color: #342939; /* Cor do texto */
+    border: none;
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none; /* Remove sublinhado para o link */
+    display: flex; /* Permite que o link se comporte como um botão */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center; /* Centraliza o texto verticalmente */
+    text-align: center;
+}
+
+.botaoAtivado {
+    height: 16px;
+    padding: 10px 16px; /* Espaçamento interno */
+    background-color: #ECECEC; /* Cor de fundo */
+    color: #342939; /* Cor do texto */
+    border: 2px solid #342939;
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none; /* Remove sublinhado para o link */
+    display: flex; /* Permite que o link se comporte como um botão */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center; /* Centraliza o texto verticalmente */
+    text-align: center;
+}
+
+#linha1 {
+    font-size: 14px; /* Tamanho da fonte */ 
+}
+
+#linha2 {
+    display: block; /* Força a quebra de linha */
+    font-size: 12px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.botaoLinkedin {
+    background: none; /* Remove o fundo padrão do botão */
+    border: 2px solid #1E65AF; /* Remove a borda padrão do botão */
+    border-radius: 30px;
+    padding: 5px; /* Remove o padding padrão */
+    cursor: pointer; /* Altera o cursor para indicar clicável */
+    display: flex;
+    margin-top: 10px;
+    width: 140px;
+    justify-content: center; /* Alinha a imagem horizontalmente no centro */
+    align-items: center; /* Alinha a imagem verticalmente no centro */
+    margin-left: 0px;
+}
+
+/* Estilo para a imagem dentro do botão */
+.botaoIconeL {
+    width: 100px; /* Ajusta o tamanho da imagem */
+}
+
+/* Contêiner principal */
+.integrante {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.integranteImagem {
+    width: 200px;
+}
+
+.integrante .integrante-info p {
+    text-align: left; /* Garante que o texto esteja alinhado à esquerda */
+    margin-top: 10px;  
+}
+
+/* Área de informações */
+.integrante-info {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -120px;
+}
+
+#botaoGitHub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0px;
+    background-color: #ffffff; /* Ajuste a cor de fundo */
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    width: 180px;
+    height: 53px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#botaoGitHub img {
+    margin-right: -10px;
+    width: 40px;
+}
+
+.botaoApoiar {
+    border: 2px solid #307834;
+    padding: 8px 16px;
+}
+
+.botaoApoiarAtivo {
+    background-color: #307834;
+    color: #ffffff;
+}
+
+.botaoORG {
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #307834; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none; /* Remove sublinhado para o link */
+    display: inline-block; /* Permite que o link se comporte como um botão */
+    margin-right: 0;
+}
+
+.botaoDOADOR {
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #16ad1b; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none; /* Remove sublinhado para o link */
+    display: inline-block; /* Permite que o link se comporte como um botão */
+    margin-left: 0;
+}
+
+/* Contêiner do slide */
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Imagens do slide */
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out; 
+}
+
+.slides img {
+    object-fit: cover; /* Ajusta a imagem à tela */
+}
+
+.infoSite{
+    margin: 20px;
+}
+
+.titulo{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border-radius: 50px;
+    width: 250px;
+    background-color: #307834;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.conteudo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    background-color: #ECECEC;
+    padding: 15px;
+}
+
+p {
+    text-indent: 30px; /* Define o espaço na primeira linha do parágrafo */
+}
+
+#imgSemeando{
+    float: right;
+}
+
+.chamada{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 50px;
+    color: white;
+    background-color: #307834;
+    padding: 8px;
+    margin-top: 30px;
+}
+
+.campanhaHome {
+    float: left;
+    border: 2px;
+    background-color: #ECECEC;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#campanhaHome1, #campanhaHome2, #campanhaHome3{
+    width: 200px;
+    margin: 10px;
+}
+
+#campanhaHome3 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.tipoEnergia, .nomeOrganizacao {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    
+}
+
+.descricaoCampanhaHome {
+    margin: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.metaHome1 {
+    font-size: 17px;
+}
+
+.metaHome2 {
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+.metaHome3 {
+    margin-top: 45px;
+    font-size: 17px;
+}
+
+progress {
+    width: 90%; /* Largura da barra */
+    height: 30px; /* Altura da barra */
+    appearance: none; /* Remover estilos padrões do navegador */
+    margin-top: 10px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: white; /* Cor de fundo da barra */
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4caf50; /* Cor da parte preenchida da barra */
+    border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #4caf50; /* Cor para Firefox */
+    border-radius: 10px;
+}
+
+.numero-progresso1 {
+    margin-top: -25px;
+    left: 60%;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.numero-progresso2 {
+    margin-top: -25px;
+    margin-left: -180px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.numero-progresso3 {
+    margin-top: -25px;
+    margin-left: 60px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.faq-container {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+.faq-question {
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+.faq-question:hover {
+    background-color: #e0e0e0;
+}
+  
+.faq-answer {
+    padding: 10px;
+    background-color: #fafafa;
+    display: none; /* Inicialmente escondido */
+    border: 1px solid #ddd;
+    border-top: none;
+    text-indent: 0px;
+}
+
+.respostaFAQ {
+    margin-top: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.filtroCampanha{
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 7px;
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.filtroCampanha option {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.campanha {
+    border: 2px solid #e0e0e0;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+}
+
+#logoC1, #logoC3 {
+    float: left;
+    width: 140px;
+    margin-left: 10px;
+    margin-top: 45px;
+}
+
+#logoC2 {
+    float: left;
+    width: 140px;
+    margin-left: 10px;
+    margin-top: 35px;
+}
+
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.campanhaTexto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#progressoPainel::-webkit-progress-bar {
+    background-color: white; /* Cor de fundo da barra */
+    border-radius: 10px;
+}
+
+.numero-progresso1-painel {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.numero-progresso2-painel {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.numero-progresso3-painel {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.botaoEmpresa {
+    padding: 10px 15px; /* Espaçamento interno */
+    background-color: #307834; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 20px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.botaoEmpresa2 {
+    padding: 10px 15px; /* Espaçamento interno */
+    background-color: #307834; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 20px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.botaoEmpresa3 {
+    padding: 10px 15px; /* Espaçamento interno */
+    background-color: #307834; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 20px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.botaoParaApoiar {
+    padding: 10px 15px; /* Espaçamento interno */
+    background-color: #16ad1b; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 20px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#apoiando {
+    margin-top: 35px;
+}
+
+#textoPagamento {
+    margin-bottom: 25px;
+}
+
+.formaPagamento {
+    background-color: #e0e0e0;
+    margin-top: 30px;
+}
+
+#pag {
+    text-decoration: none;
+    text-align: center;
+}
+
+.formaPagamento img {
+    width: 50px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.tipoPagamento {
+    text-align: center;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px 
+}

@@ -1,0 +1,382 @@
+/* eXtra Small devices (phones, 600px and down) */
+
+@media  (max-width: 600px) {
+    #header{
+        width: 100%;
+        height: 70px;
+        background-color: #307834;
+    }
+    
+    .logo img{
+        width: 160px;
+    }
+    
+    .linksCabecalho{
+        display: none;
+    }
+
+    .hamburguer {
+        left: 25px; /* Posiciona o ícone hambúrguer à esquerda */
+    }
+
+    .lupa {
+        margin-left: 98px;
+    }
+    
+    #navRodape {
+        width: 80%;  
+    }
+
+    .conteudoRodape {
+        height: 60px;
+    }
+
+    #rodape {
+        margin-top: 0px;
+    }
+
+    #rodape a {
+        font-size: 10px;
+    }
+    
+    #logoRodape img{
+        height: 25px;
+        margin-left: 370px;
+    }
+
+    #pt1 {
+        position: absolute;
+    }
+
+    #pt2 {
+        position: absolute;
+        margin-left: 150px;
+    }
+    
+    #copy{
+        font-size: 9px;
+        margin-left: 393px;
+    }
+
+    .botoesMenu{
+        display: none;
+    }
+
+    div.botoesMenuHome {
+        display: none;
+    }
+
+    h1 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+    .botaoLinkedin {
+        width: 90px;
+    }
+
+    /* Estilo para a imagem dentro do botão */
+    .botaoIconeL {
+        width: 70px; /* Ajusta o tamanho da imagem */
+    }
+    
+    /* Contêiner principal */
+    .integrante {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        width: 600px;
+    }
+    
+    .integranteImagem {
+        width: 100px;
+    }
+    
+    #botaoGitHub {
+        width: 130px;
+        height: 33px;
+        font-size: 15px;
+    }
+    
+    #botaoGitHub img {
+        width: 24px;
+    }
+
+    #esqueciSenha {
+        margin-bottom: 20px;
+    }
+    
+    /* Estilizando os campos de entrada */
+    #frmCadastro input[type="text"],
+    #frmCadastro input[type="password"] {
+        width:410px;
+    }
+
+    #frmCadastro {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 430px; /* Largura do formulário */
+    }
+
+    #txtDescricao {
+        width: 410px;
+    }
+
+    .slider {
+        width: 600px;
+        height: 30%;
+    }
+    
+    /* Imagens do slide */
+    .slides {
+        height: 100%;
+        width: 600px;
+    }
+    
+    .slides img {     
+        width: 600px;
+        height: 30%;
+    }
+
+    .conteudo {
+        margin-top: 10px;
+        width: 340px;
+        margin-left: 10px;
+    }
+    
+    #imgSemeando{
+        width: 150px;
+        margin-top: -205px;
+        margin-left: 250px;
+    }
+
+    .titulo{
+        font-size: 14px;
+        width: 180px;
+    }
+    
+    .conteudo {
+        font-size: 12px;
+    }
+    
+    p {
+        text-indent: 0;
+    }
+    
+    .chamada{
+        font-size: 14px;
+        width: 350px;
+        margin-top: 15px;
+    }
+    
+    .campanhaHome {
+        margin: 3px;
+        margin-top: 20px;
+        width: 180px;
+        height: 415px;
+        margin-bottom: 20px;
+    }
+    
+    #campanhaHome1, #campanhaHome2, #campanhaHome3{
+        width: 100px;
+        margin: 10px;
+    }
+    
+    #campanhaHome3 {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    
+    .tipoEnergia, .nomeOrganizacao {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+    }
+    
+    .descricaoCampanhaHome {
+        margin: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+    }
+    
+    .metaHome1 {
+        margin-top: 16px;
+        font-size: 13px;
+    }
+    
+    .metaHome2 {
+        margin-top: 30px;
+        font-size: 13px;
+    }
+    
+    .metaHome3 {
+        margin-top: 60px;
+        font-size: 13px;
+    }
+
+    progress {
+        height: 25px; /* Altura da barra */
+    }
+    
+    .numero-progresso1 {
+        margin-top: -20px;
+        margin-left: -10px;
+        font-size: 10px;
+    }
+    
+    .numero-progresso2 {
+        margin-top: -20px;
+        margin-left: -105px;
+        font-size: 10px;
+    }
+    
+    .numero-progresso3 {
+        margin-top: -20px;
+        margin-left: 22px;
+        font-size: 10px;
+    }
+
+    .faq-container {
+        width: 450px;
+    }
+      
+    .faq-question {
+        width: 450px;
+        font-size: 12px;
+    }
+    
+    .respostaFAQ {
+        font-size: 12px;
+    }
+
+    #tituloFormulario{
+        font-size: 15px; /* Tamanho da fonte */
+        margin-left: 0px;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .filtroCampanha{
+        font-size: 14px; /* Tamanho da fonte */
+        margin-left: 5px;
+    }
+    
+    .filtroCampanha option {
+        font-size: 12px; /* Tamanho da fonte */
+    }
+    
+    .campanha {
+        width: 520px;
+        margin-bottom: 10px;
+    }
+
+    #campanhaGeral1 {
+        height: 310px;
+    }
+
+    #campanhaGeral2 {
+        height: 300px;
+    }
+
+    #campanhaGeral3 {
+        height: 300px;
+    }
+    
+    .campanhaTexto {
+        margin-right: 12px;
+        margin-top: 6px;
+        margin-bottom: 8px;
+        font-size: 14px;
+        margin-left: 150px;
+    }
+    
+    #progressoPainel::-webkit-progress-bar {
+        margin-left: 150px;
+        width: 75%;
+    }
+    
+    .numero-progresso1-painel {
+        font-size: 13px;
+        margin-top: -21px;
+        margin-left: 325px;
+    }
+    
+    .numero-progresso2-painel {
+        font-size: 13px;
+        margin-top: -21px;
+        margin-left: 215px;
+    }
+    
+    .numero-progresso3-painel {
+        font-size: 13px;
+        margin-top: -21px;
+        margin-left: 360px;
+    }
+    
+    .metaPainel1 {
+        font-size: 14px;
+        margin-left: 150px;
+    }
+    
+    .metaPainel2 {
+        font-size: 14px;
+        margin-left: 150px;
+    }
+
+    .metaPainel3 {
+        font-size: 14px;
+    }
+
+    #grupoCampanhas {
+        margin-top: 65px;
+    }
+
+    #campanha1 {
+        margin-top: 12px;
+    }
+    
+    #campanha2, #campanha3 {
+        margin-top: 22px;
+    }
+    
+    #botaoEmpresa-Semear {
+        margin-top: 25px;
+    }
+    
+    .botaoEmpresa {
+        font-size: 14px; /* Tamanho da fonte */
+        margin-left: 267px;
+    }
+    
+    .botaoEmpresa2 {
+        font-size: 14px; /* Tamanho da fonte */
+        margin-left: 267px;
+    }
+    
+    .botaoEmpresa3 {
+        font-size: 14px; /* Tamanho da fonte */
+        margin-left: 234px;
+    }
+    
+    .botaoParaApoiar {
+        font-size: 16px; /* Tamanho da fonte */
+        margin-left: 0px;
+    }
+
+    .formaPagamento {
+        width: 350px;
+        height: 100px;
+        background-color: #e0e0e0;
+        margin: 10px;
+        border-radius: 20px;
+        margin-top: 10px;
+        line-height: 100px;
+    }
+    
+    .tipoPagamento {
+        font-size: 16px;
+    }
+}
