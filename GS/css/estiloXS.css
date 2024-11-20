@@ -397,4 +397,56 @@
     #tituloEmpresasParceiras{
         margin-top: 30px;
     }
+
+    #tituloEmpresa {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    #infoEmpresaSap {
+        width: 500px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .LogoDaSap{
+        float: right;
+        width: 135px;
+        margin-top: 10px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+    
+    #infoEmpresaFIA {
+        width: 500px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #infoEmpresaUltragaz {
+        width: 500px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .textoEmpresa {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+    }
+    
+    .LogoDaFIA {
+        float: right;
+        width: 125px;
+        margin-right: 45px;
+        margin-bottom: 40px;
+    }
+    
+    .LogoDaUltragaz {
+        float: right;
+        width: 180px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
 }

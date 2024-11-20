@@ -147,7 +147,7 @@ main {
     left: -250px;
     background-color: rgba(204, 204, 190, 1);
     width: 300px;
-    height: 70.4%;
+    height: 80.3%;
     padding: 20px;
     display: none; /* Escondido inicialmente */
     border: 2px solid #000000;
@@ -716,6 +716,7 @@ h1 {
 
 p {
     text-indent: 30px; /* Define o espaço na primeira linha do parágrafo */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #imgSemeando{
@@ -1003,13 +1004,14 @@ h4 {
     align-items: center; /* Opcional: alinha as imagens verticalmente ao centro */
 }
 
-#infoEmpresaSap {
-    width: 900px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 .LogoDaSap{
     float: right;
-    width: 220px;
+}
+
+.LogoDaFIA {
+    float: right;
+}
+
+.LogoDaUltragaz {
+    float: right;
 }
