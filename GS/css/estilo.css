@@ -391,7 +391,7 @@ main {
 }
 
 .botaoLimpar {
-    padding: 10px 15px; /* Espaçamento interno */
+    padding: 9px 13px; /* Espaçamento interno */
     color: #5a5a59; /* Cor do texto */
     border: 2px solid #5a5a59;
     border-radius: 20px; /* Bordas arredondadas */
@@ -1041,4 +1041,58 @@ h4 {
 
 .LogoDaUltragaz {
     float: right;
+}
+
+#suaFotoPerfil {
+    float: left;
+}
+
+#ImagemBarbara{
+    width: 180px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#informacoesBarbara{
+    float: left;
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.atualizarCadastro {
+    padding: 7px 10px; /* Espaçamento interno */
+    color: #5a5a59; /* Cor do texto */
+    border: 2px solid #5a5a59;
+    border-radius: 20px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 0;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+#perfilBarbara {
+    margin-bottom: 20px;
+}
+
+.campanhasDoadas {
+    width: 570px;
+    border-radius: 20px;
+    margin-top: 250px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+}
+
+#campanhasPerfil {
+   margin-left: 6px;
+}
+
+#suasDoacoes {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
 }

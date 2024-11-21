@@ -416,4 +416,46 @@
     #txtCNPJ, #txtCPF, #txtTelefone, #txtSenha, #txtConfSenha {
         width: 180px !important;
     }
+    
+    #ImagemBarbara{
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 280px;
+    }
+    
+    #informacoesBarbara{
+        float: left;
+        margin-top: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    
+    .atualizarCadastro {
+        font-size: 16px; /* Tamanho da fonte */
+    }
+    
+    #perfilBarbara {
+        margin-bottom: 20px;
+    }
+    
+    .campanhasDoadas {
+        width: 1160px;
+        border-radius: 20px;
+        margin-top: 250px;
+        margin-bottom: 20px;
+        border: 1px solid #000;
+    }
+    
+    #campanhasPerfil {
+       margin-left: 0px;
+    }
+    
+    #suasDoacoes {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 26px;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
 }

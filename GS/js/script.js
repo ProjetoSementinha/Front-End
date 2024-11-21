@@ -90,17 +90,11 @@ if (slides) {
     const totalSlides = slides.children.length;
     let currentIndex = 0;
 
-    /**
-     * Atualiza a posição do slide
-     */
     function updateSlidePosition() {
         const offset = -currentIndex * 100; // Move 100% da largura para cada slide
         slides.style.transform = `translateX(${offset}%)`;
     }
 
-    /**
-     * Avança o slide automaticamente
-     */
     function autoSlide() {
         currentIndex = (currentIndex + 1) % totalSlides; // Avança o índice e reinicia se for o último
         updateSlidePosition();
@@ -109,7 +103,6 @@ if (slides) {
     // Troca de slide a cada 5 segundos
     setInterval(autoSlide, 5000);
 }
-
 
 // Seleciona todos os botões de pergunta
 const faqQuestions = document.querySelectorAll('.faq-question');
@@ -129,19 +122,7 @@ faqQuestions.forEach((question) => {
 });
 
 
-function validar(){
-    
-    var nomeEl = document.getElementById("txtNome");
-    var razaoSocialEl = document.getElementById("txtRazaoSocial");
-    var emailEl = document.getElementById("txtEmail");
-    var cpfEl = document.getElementById("txtCPF");
-    var cnpjEl = document.getElementById("txtCNPJ");
-    var ramoEl = document.getElementById("txtRamo");
-    var telefoneEl = document.getElementById("txtTelefone");
-    var enderecoEl = document.getElementById("txtEndereco");
-    var usuarioEl = document.getElementById("txtNomeUsuario");
-    var senhaEl = document.getElementById("txtSenha");
-    var confSenhaEl = document.getElementById("txtConfSenha");
+function validarCadastroCampanha(){
     var nomeCampanhaEl = document.getElementById("txtNomeCampanha");
     var tipoEnergiaEl = document.getElementById("green-energy");
     var descricaoEl = document.getElementById("txtDescricao");
@@ -169,17 +150,27 @@ function validar(){
         alert("Preencha o campo Meta");
         metaEl.focus();
         return false;
-    }
+    }  
+
+    alert("Cadastro da Campanha finalizado com sucesso!");
+    return true;
+    
+}
+
+function validarCadastroDoador(){
+    var nomeEl = document.getElementById("txtNome");
+    var emailEl = document.getElementById("txtEmail");
+    var cpfEl = document.getElementById("txtCPF");
+    var telefoneEl = document.getElementById("txtTelefone");
+    var enderecoEl = document.getElementById("txtEndereco");
+    var usuarioEl = document.getElementById("txtNomeUsuario");
+    var senhaEl = document.getElementById("txtSenha");
+    var confSenhaEl = document.getElementById("txtConfSenha");
+
 
     if(nomeEl.value == ""){
-        alert("Preencha o campo nome");
+        alert("Preencha o campo Nome");
         nomeEl.focus();
-        return false;
-    }
-
-    if(razaoSocialEl.value == ""){
-        alert("Preencha o campo Razão Social");
-        razaoSocialEl.focus();
         return false;
     }
 
@@ -195,15 +186,73 @@ function validar(){
         return false;
     }
 
-    if(cnpjEl.value == ""){
-        alert("Preencha o campo CNPJ");
-        cnpjEl.focus();
+    if(telefoneEl.value == ""){
+        alert("Preencha o campo Telefone");
+        telefoneEl.focus();
+        return false;
+    }
+
+    if(enderecoEl.value == ""){
+        alert("Preencha o campo Endereço");
+        enderecoEl.focus();
+        return false;
+    }
+
+    if(usuarioEl.value == ""){
+        alert("Preencha o campo Usuário");
+        usuarioEl.focus();
+        return false;
+    }
+
+    if ((senhaEl.value == "") || (confSenhaEl.value == "")) {
+        alert("Preencha os campos senha e confirmação de senha");
+        senhaEl.focus();
+        return false; // Impede o envio
+    } else {
+        if (senhaEl.value != confSenhaEl.value) {
+            alert("As senhas não conferem");
+            senhaEl.focus();
+            return false; // Impede o envio
+        }
+    }  
+
+    alert("Formulário enviado com sucesso!");
+    return true;
+    
+}
+
+function validarCadastroOrganizacao(){
+    var razaoSocialEl = document.getElementById("txtRazaoSocial");
+    var emailEl = document.getElementById("txtEmail");
+    var cnpjEl = document.getElementById("txtCNPJ");
+    var ramoEl = document.getElementById("txtRamo");
+    var telefoneEl = document.getElementById("txtTelefone");
+    var enderecoEl = document.getElementById("txtEndereco");
+    var usuarioEl = document.getElementById("txtNomeUsuario");
+    var senhaEl = document.getElementById("txtSenha");
+    var confSenhaEl = document.getElementById("txtConfSenha");
+
+    if(razaoSocialEl.value == ""){
+        alert("Preencha o campo Razão Social");
+        razaoSocialEl.focus();
+        return false;
+    }
+
+    if(emailEl.value == ""){
+        alert("Preencha o campo E-mail");
+        emailEl.focus();
         return false;
     }
 
     if(ramoEl.value == ""){
         alert("Preencha o campo Ramo de Atuação");
         ramoEl.focus();
+        return false;
+    }
+
+    if(cnpjEl.value == ""){
+        alert("Preencha o campo CNPJ");
+        cnpjEl.focus();
         return false;
     }
 
