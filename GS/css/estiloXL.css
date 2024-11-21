@@ -414,13 +414,14 @@
     }
 
     #txtCNPJ, #txtCPF, #txtTelefone, #txtSenha, #txtConfSenha {
-        width: 180px !important;
+        width: 400px !important;
     }
     
     #ImagemBarbara{
         width: 200px;
         margin-top: 10px;
         margin-left: 280px;
+        margin-bottom: 40px;
     }
     
     #informacoesBarbara{
