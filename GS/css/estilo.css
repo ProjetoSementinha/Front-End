@@ -263,7 +263,8 @@ main {
     font-size: 14px; /* Tamanho da fonte */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #333; /* Cor do texto */
-    margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+    margin-top: 5px;
+    margin-bottom: 2px; /* Espaçamento abaixo do rótulo */
     display: block; /* Faz o rótulo ocupar a linha inteira */
 }
 
@@ -273,7 +274,7 @@ main {
     width:325px; /* Largura total */
     padding: 10px; /* Espaçamento interno */
     margin-top: -10px; /* Espaçamento superior */
-    margin-bottom: 15px; /* Espaçamento inferior */
+    margin-bottom: 10px; /* Espaçamento inferior */
     border: 1px solid #ccc; /* Borda */
     border-radius: 5px; /* Bordas arredondadas */
     font-size: 14px; /* Tamanho da fonte */
@@ -304,12 +305,26 @@ main {
 #frmCadastro input[type="text"],
 #frmCadastro input[type="password"] {
     padding: 10px; /* Espaçamento interno */
-    margin-top: -15px; /* Espaçamento superior */
+    margin-top: 0px; /* Espaçamento superior */
     margin-bottom: 5px; /* Espaçamento inferior */
     border: 1px solid #ccc; /* Borda */
     border-radius: 5px; /* Bordas arredondadas */
     font-size: 14px; /* Tamanho da fonte */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.erro {
+    display: none;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;   
+}
+
+
+.linha-campos {
+    display: flex;
+    gap: 20px; /* Espaço horizontal entre os campos */
+    margin-bottom: 10px; /* Espaçamento inferior entre as linhas */
 }
 
 #tituloFormulario{
@@ -367,6 +382,18 @@ main {
     background-color: #16ad1b; /* Cor de fundo */
     color: white; /* Cor do texto */
     border: none; /* Sem borda */
+    border-radius: 20px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 0;
+}
+
+.botaoLimpar {
+    padding: 10px 15px; /* Espaçamento interno */
+    color: #5a5a59; /* Cor do texto */
+    border: 2px solid #5a5a59;
     border-radius: 20px; /* Bordas arredondadas */
     text-decoration: none; /* Remove sublinhado */
     cursor: pointer; /* Muda o cursor ao passar por cima */

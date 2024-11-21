@@ -117,38 +117,43 @@
                     <div class="secao-upload">
                         <label for="carregarImagem"></label>
                         <div id="visualizacaoImagem">
-                            <img src="images/default-user.png" alt="Foto de Perfil" id="imagemUsuario">
+                            <img src="images/default-user.png" alt="Foto da Campanha" id="imagemUsuario">
                         </div>
                         <input type="file" name="carregarImagem" id="carregarImagem" accept="image/*">
                     </div>
-                    <label for="txtNomeCampanha">Nome da Campanha</label>
-                    <br>
-                    <input type="text" name="txtNomeCampanha" id="txtNomeCampanha">
-                    <br>
-                    <label for="green-energy">Tipo de Energia Verde</label>
-                    <select id="green-energy" name="green-energy" required>
-                        <option value="" disabled selected>Selecione uma opção</option>
-                        <option value="solar">Energia Solar</option>
-                        <option value="eolica">Energia Eólica</option>
-                        <option value="hidreletrica">Energia Hidrelétrica</option>
-                        <option value="geotermica">Energia Geotérmica</option>
-                        <option value="mares">Energia das Marés</option>
-                        <option value="ondas">Energia das Ondas</option>
-                        <option value="biomassa">Biomassa</option>
-                        <option value="biogas">Biogás</option>
-                        <option value="hidrogenio">Hidrogênio Verde</option>
-                    </select>
-                    <br>
-                    <label for="txtDescricao">Descrição</label>
-                    <textarea name="txtDescricao" id="txtDescricao" rows="5" cols="30"></textarea>
-                    <br>
-                    <label for="txtMeta">Meta de Doação</label>
-                    <br>
-                    <input type="text" name="txtMeta" id="txtMeta">
-                    <br>
-                    <div id="divBotaoCadastro">
-                        <a href="#" class="botaoCadastro">Cadastrar Campanha</a>
+                    <div class="campo">
+                        <label for="txtNomeCampanha">Nome da Campanha*</label>
+                        <input type="text" name="txtNomeCampanha" id="txtNomeCampanha">
                     </div>
+                    
+                    <div class="campo">
+                        <label for="green-energy">Tipo de Energia Verde*</label>
+                        <select id="green-energy" name="green-energy" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="solar">Energia Solar</option>
+                            <option value="eolica">Energia Eólica</option>
+                            <option value="hidreletrica">Energia Hidrelétrica</option>
+                            <option value="geotermica">Energia Geotérmica</option>
+                            <option value="mares">Energia das Marés</option>
+                            <option value="ondas">Energia das Ondas</option>
+                            <option value="biomassa">Biomassa</option>
+                            <option value="biogas">Biogás</option>
+                            <option value="hidrogenio">Hidrogênio Verde</option>
+                        </select>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="txtDescricao">Descrição*</label>
+                        <textarea name="txtDescricao" id="txtDescricao" rows="5" cols="30"></textarea>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="txtMeta">Meta de Doação*</label>
+                        <input type="text" name="txtMeta" id="txtMeta">
+                    </div>                    
+                    <div id="divBotaoCadastro">
+                        <button type="button" class="botaoCadastro" onclick="validar()">Cadastrar Campanha</button>
+                    </div>                    
                 </div>
             </div>
         </form>

@@ -99,20 +99,31 @@
                 <input type="text" id="search-input" placeholder="Digite sua busca..." />
                 <button id="search-button">Pesquisar</button>
             </div>
-            <form name=frmLogin id="frmLogin" method="post" enctype="multipart/form-data">
-                <label for="txtUsuario">Usuário</label>
-                <br>
-                <input type="text" name="txtUsuario" id="txtUsuario" required placeholder="Digite seu usuário">
-                <br>
-                <label>Senha</label>
-                <br>
-                <input type="password" name="txtSenha" id="txtSenha" placeholder="Digite sua senha">
-                <br>
+            <form name="frmLogin" id="frmLogin" method="post" enctype="multipart/form-data">
+                <div class="campo">
+                    <label for="txtUsuario">Usuário</label>
+                    <br>
+                    <input type="text" name="txtUsuario" id="txtUsuario" required placeholder="Digite seu usuário">
+                    <br>
+                    <!-- Mensagem de erro inline para o campo Usuário -->
+                    <span id="usuarioErro" class="erro">O campo Usuário é obrigatório.</span>
+                </div>
+                <div class="campo">
+                    <label for="txtSenhaLogin">Senha</label>
+                    <br>
+                    <input type="password" name="txtSenhaLogin" id="txtSenhaLogin" placeholder="Digite sua senha">
+                    <br>
+                    <!-- Mensagem de erro inline para o campo Senha -->
+                    <span id="senhaErro" class="erro">A senha é obrigatória.</span>
+                </div>                
             </form>
+            
             <div class="botoesLogin">
-                <a href="cadastrar.html" class="botaoCadastrar">Cadastrar</a>
-                <a href="painelDeCampanhas.html" class="botaoEntrar">Entrar</a>
+                <a href="cadastrarDoador.html" class="botaoCadastrar">Cadastrar</a>
+                <!-- Alteração para adicionar o evento de clique -->
+                <a href="#" class="botaoEntrar" onclick="validarFormulario(event)">Entrar</a>
             </div>
+                        
             <div id="esqueciSenha">
                 <a href="esqueciSenha.html">Esqueci minha senha...</a>
             </div>

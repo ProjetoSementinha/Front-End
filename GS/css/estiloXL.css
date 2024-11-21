@@ -412,4 +412,8 @@
         width: 200px;
         margin-right: 30px;
     }
+
+    #txtCNPJ, #txtCPF, #txtTelefone, #txtSenha, #txtConfSenha {
+        width: 180px !important;
+    }
 }

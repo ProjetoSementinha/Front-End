@@ -117,7 +117,7 @@
         <form name=frmCadastro id="frmCadastro" method="post" enctype="multipart/form-data">
             <p id="tituloFormulario">Preencha os dados abaixo para realizar o seu cadastro</p>
             <div class="formGrupo">
-                <div class="campos">
+                <div class="campo">
                     <div class="secao-upload">
                         <label for="carregarImagem"></label>
                         <div id="visualizacaoImagem">
@@ -125,44 +125,55 @@
                         </div>
                         <input type="file" name="carregarImagem" id="carregarImagem" accept="image/*">
                     </div>
-                    <label for="txtRazaoSocial">Razão Social</label>
-                    <br>
-                    <input type="text" name="txtRazaoSocial" id="txtRazaoSocial">
-                    <br>
-                    <label for="txtEmail">E-mail</label>
-                    <br>
-                    <input type="text" name="txtEmail" id="txtEmail">
-                    <br>
-                    <label for="txtCNPJ">CNPJ</label>
-                    <br>
-                    <input type="text" name="txtCNPJ" id="txtCNPJ">
-                    <br>
-                    <label for="txtRamo">Ramo de Atuação</label>
-                    <br>
-                    <input type="text" name="txtRamo" id="txtRamo">
-                    <br>
-                    <label for="txtTelefone">Telefone</label>
-                    <br>
-                    <input type="text" name="txtTelefone" id="txtTelefone">
-                    <br>
-                    <label for="txtEndereco">Endereço</label>
-                    <br>
-                    <input type="text" name="txtEndereco" id="txtEndereco">
-                    <br>
-                    <label for="txtNomeUsuario">Crie um usuário</label>
-                    <br>
-                    <input type="text" name="txtNomeUsuario" id="txtNomeUsuario">
-                    <br>
-                    <label>Digite uma senha</label>
-                    <br>
-                    <input type="password" name="txtCriarSenha" id="txtCriarSenha">
-                    <br>
-                    <label>Confirme a sua senha</label>
-                    <br>
-                    <input type="password" name="txtConfirmarSenha" id="txtConfirmarSenha">
-                    <br>
+                    <div class="campo">
+                        <label for="txtRazaoSocial">Razão Social*</label>
+                        <input type="text" name="txtRazaoSocial" id="txtRazaoSocial" class="campos">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="txtEmail">E-mail*</label>
+                        <input type="text" name="txtEmail" id="txtEmail" class="campos">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="txtRamo">Ramo de Atuação*</label>
+                        <input type="text" name="txtRamo" id="txtRamo" class="campos">
+                    </div>
+                    
+                    <div class="linha-campos">
+                        <div class="campo">
+                            <label for="txtCNPJ">CNPJ*</label>
+                            <input type="text" name="txtCNPJ" id="txtCNPJ" class="campos">
+                        </div>
+                        <div class="campo">
+                            <label for="txtTelefone">Telefone*</label>
+                            <input type="text" name="txtTelefone" id="txtTelefone" class="campos">
+                        </div>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="txtEndereco">Endereço*</label>
+                        <input type="text" name="txtEndereco" id="txtEndereco" class="campos">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="txtNomeUsuario">Crie um usuário*</label>
+                        <input type="text" name="txtNomeUsuario" id="txtNomeUsuario" class="campos">
+                    </div>
+                    
+                    <div class="linha-campos">
+                        <div class="campo">
+                            <label for="txtSenha">Digite uma senha*</label>
+                            <input type="password" name="txtSenha" id="txtSenha" class="campos">
+                        </div>
+                        <div class="campo">
+                            <label for="txtConfSenha">Confirme a sua senha*</label>
+                            <input type="password" name="txtConfSenha" id="txtConfSenha" class="campos">
+                        </div>
+                    </div>                    
                     <div id="divBotaoCadastro">
-                        <a href="#" class="botaoCadastro">Cadastrar</a>
+                        <input type="reset" value="Limpar" class="botaoLimpar">
+                        <button type="button" onclick="validar()" class="botaoCadastro">Enviar</button>
                     </div>
                 </div>
             </div>
