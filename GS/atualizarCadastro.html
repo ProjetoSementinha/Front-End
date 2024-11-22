@@ -40,17 +40,20 @@
                             </li>
                             <li>
                                 <a href="painelDeCampanhas.html">
-                                    <img src="images/painel.png" alt="Ícone para o Painel de Campanhas" class="icon">Painel de Campanhas
+                                    <img src="images/painel.png" alt="Ícone para o Painel de Campanhas"
+                                        class="icon">Painel de Campanhas
                                 </a>
                             </li>
                             <li>
                                 <a href="cadastrarCampanhas.html">
-                                    <img src="images/folhinha.png" alt="Ícone de folhinha" class="icon">Cadastrar Campanha
+                                    <img src="images/folhinha.png" alt="Ícone de folhinha" class="icon">Cadastrar
+                                    Campanha
                                 </a>
                             </li>
                             <li>
                                 <a href="sobreEmpresas.html">
-                                    <img src="images/parceria.png" alt="Ícone de mão dadas para informações de Empresas Parceiras"
+                                    <img src="images/parceria.png"
+                                        alt="Ícone de mão dadas para informações de Empresas Parceiras"
                                         class="icon">Empresas Parceiras
                                 </a>
                             </li>
@@ -87,13 +90,12 @@
                     </section>
                     <div class="linksCabecalhoIcones">
                         <a href="#"><img src="images/lupa.png" alt="lupa" class="lupa" id="search-icon"></a>
-                        <a href="verPerfil.html"><img src="images/usuario_branco.png" alt="perfil"
-                                class="perfil"></a>
+                        <a href="verPerfil.html"><img src="images/usuario_branco.png" alt="perfil" class="perfil"></a>
                     </div>
                 </div>
             </div>
         </div>
-    </header>    
+    </header>
     <main>
         <div class="botoesMenu">
             <a href="home.html" class="botaoM">HOME</a>
@@ -127,48 +129,49 @@
                     </div>
                     <div class="campo">
                         <label for="txtNome">Atualizar Nome Completo*</label>
-                        <input type="text" name="txtNome" id="txtNome" class="campos">
+                        <input type="text" name="txtNome" id="txtNome" class="campos" required
+                            placeholder="Digite seu Nome">
                     </div>
-                    
+
                     <div class="campo">
                         <label for="txtEmail">Atualizar E-mail*</label>
-                        <input type="text" name="txtEmail" id="txtEmail" class="campos">
+                        <input type="text" name="txtEmail" id="txtEmail" class="campos" required placeholder="Digite seu E-mail">
                     </div>
-                    
+
                     <div class="linha-campos">
                         <div class="campo">
                             <label for="txtCPF">Atualizar CPF*</label>
-                            <input type="text" name="txtCPF" id="txtCPF" class="campos">
+                            <input type="text" name="txtCPF" id="txtCPF" class="campos" required placeholder="Digite seu CPF">
                         </div>
                         <div class="campo">
                             <label for="txtTelefone">Atualizar Telefone*</label>
-                            <input type="text" name="txtTelefone" id="txtTelefone" class="campos">
+                            <input type="text" name="txtTelefone" id="txtTelefone" class="campos" required placeholder="Digite seu Telefone">
                         </div>
                     </div>
-                    
+
                     <div class="campo">
                         <label for="txtEndereco">Atualizar Endereço*</label>
-                        <input type="text" name="txtEndereco" id="txtEndereco" class="campos">
+                        <input type="text" name="txtEndereco" id="txtEndereco" class="campos" required placeholder="Digite seu Endereço">
                     </div>
-                    
+
                     <div class="campo">
                         <label for="txtNomeUsuario">Atualizar usuário*</label>
-                        <input type="text" name="txtNomeUsuario" id="txtNomeUsuario" class="campos">
+                        <input type="text" name="txtNomeUsuario" id="txtNomeUsuario" class="campos" required placeholder="Digite um Usuário">
                     </div>
-                    
+
                     <div class="linha-campos">
                         <div class="campo">
                             <label for="txtSenha">Crie uma nova senha*</label>
-                            <input type="password" name="txtSenha" id="txtSenha" class="campos">
+                            <input type="password" name="txtSenha" id="txtSenha" class="campos" required placeholder="Digite uma Senha">
                         </div>
                         <div class="campo">
                             <label for="txtConfSenha">Confirme a sua nova senha*</label>
-                            <input type="password" name="txtConfSenha" id="txtConfSenha" class="campos">
+                            <input type="password" name="txtConfSenha" id="txtConfSenha" class="campos" required placeholder="Repita a Senha">
                         </div>
-                    </div>                    
+                    </div>
                     <div id="divBotaoCadastro">
                         <input type="reset" value="Limpar" class="botaoLimpar">
-                        <button type="button" class="botaoCadastro" onclick="validarCadastroDoador()">Atualizar</button>                   
+                        <button type="button" class="botaoCadastro" onclick="validarCadastroDoador()">Atualizar</button>
                     </div>
                 </div>
             </div>
@@ -184,7 +187,7 @@
                     <br>
                     <a href="painelDeCampanhas.html">PAINEL DE CAMPANHAS</a>
                 </div>
-                <div id ="pt2">
+                <div id="pt2">
                     <a href="sobreEmpresas.html">EMPRESAS PARCEIRAS</a>
                     <br>
                     <a href="integrantes.html">INTEGRANTES</a>
@@ -192,12 +195,13 @@
                     <a href="faq.html">FAQ</a>
                 </div>
                 <div id="logoRodape">
-                    <img src ="images/logo_cinza.png" alt="logo">
+                    <img src="images/logo_cinza.png" alt="logo">
                     <p id="copy">© Copyright 2024</p>
                 </div>
             </nav>
         </div>
     </footer>
 </body>
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
+
 </html>
